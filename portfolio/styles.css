@@ -1,0 +1,152 @@
+header {
+    background: #333;
+    color: white;
+    padding: 1rem 2rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding: 0;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #a1a0a0;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffffff;
+}
+
+
+button#language-toggle {
+    background: #a1a0a0;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+}
+
+button#language-toggle:hover {
+    background: #ffffff;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #333;
+        width: 100%;
+        text-align: center;
+        padding: 1rem 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+section {
+    padding: 6rem 2rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#inicio {
+    background: #f0facc;
+    display: block;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100%;
+    text-align: left;
+}
+
+.nombre,
+.apellido {
+    font-size: 20vw;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+}
+
+.nombre {
+    color: #000000;
+}
+
+.apellido {
+    color: #6e6d6d;
+}
+
+#sobre-mi {
+    background: #ffffff;
+}
+
+#proyectos {
+    background: #ddd;
+}
+
+#contacto {
+    background: #bbb;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
