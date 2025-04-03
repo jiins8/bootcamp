@@ -91,6 +91,8 @@ button#language-toggle:hover {
 
     nav ul.show {
         display: flex;
+        height: auto;
+        
     }
 
     .menu-toggle {
@@ -105,6 +107,11 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#sobre-mi {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
 }
 
 #inicio {
