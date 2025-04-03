@@ -1,31 +1,33 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const languageToggle = document.getElementById("language-toggle");
+    const languageToggle = document.getElementById("language_toggle");
     const texts = {
         es: {
-            descripcion: "Desarrollador de aplicaciones y diseñador UX/UI.",
-            sobreMiTitulo: "Sobre Mí",
-            sobreMiTexto: "Aquí puedes escribir información sobre ti, tu experiencia y habilidades.",
-            proyectosTitulo: "Proyectos",
-            proyectosTexto: "Aquí mostrarás tus proyectos con enlaces y descripciones.",
-            contactoTitulo: "Contacto",
-            contactoTexto: "Deja tu información de contacto o formulario.",
-            navInicio: "Inicio",
-            navSobreMi: "Sobre Mí",
-            navProyectos: "Proyectos",
-            navContacto: "Contacto"
+            home: "Hola, soy",
+            description: "Desarrollador Full-Stack",
+            aboutMeTitle: "Sobre Mí",
+            aboutMeText: "Aquí puedes escribir información sobre ti, tu experiencia y habilidades.",
+            projectTitle: "Proyectos",
+            projectTexts: "Aquí mostrarás tus proyectos con enlaces y descriptiones.",
+            contactTitle: "Contacto",
+            contactText: "Deja tu información de contacto o formulario.",
+            navHome: "Inicio",
+            navAboutMe: "Sobre Mí",
+            navProjects: "Proyectos",
+            navContact: "Contacto"
         },
         en: {
-            descripcion: "Application developer and UX/UI designer.",
-            sobreMiTitulo: "About Me",
-            sobreMiTexto: "Here you can write information about yourself, your experience, and skills.",
-            proyectosTitulo: "Projects",
-            proyectosTexto: "Here you will showcase your projects with links and descriptions.",
-            contactoTitulo: "Contact",
-            contactoTexto: "Leave your contact information or form.",
-            navInicio: "Home",
-            navSobreMi: "About Me",
-            navProyectos: "Projects",
-            navContacto: "Contact"
+            home: "Hello, I'm",
+            description: "Full-Stack Developer",
+            aboutMeTitle: "About Me",
+            aboutMeText: "Here you can write information about yourself, your experience, and skills.",
+            projectTitle: "Projects",
+            projectTexts: "Here you will showcase your projects with links and descriptions.",
+            contactTitle: "Contact",
+            contactText: "Leave your contact information or form.",
+            navHome: "Home",
+            navAboutMe: "About Me",
+            navProjects: "Projects",
+            navContact: "Contact"
         }
     };
 
@@ -42,15 +44,15 @@ document.addEventListener("DOMContentLoaded", function () {
             }
         });
         
-        document.querySelector("nav ul li:nth-child(1) a").textContent = selectedTexts.navInicio;
-        document.querySelector("nav ul li:nth-child(2) a").textContent = selectedTexts.navSobreMi;
-        document.querySelector("nav ul li:nth-child(3) a").textContent = selectedTexts.navProyectos;
-        document.querySelector("nav ul li:nth-child(4) a").textContent = selectedTexts.navContacto;
+        document.querySelector("nav ul li:nth-child(1) a").textContent = selectedTexts.navHome;
+        document.querySelector("nav ul li:nth-child(2) a").textContent = selectedTexts.navAboutMe;
+        document.querySelector("nav ul li:nth-child(3) a").textContent = selectedTexts.navProjects;
+        document.querySelector("nav ul li:nth-child(4) a").textContent = selectedTexts.navContact;
     }
 
     languageToggle.addEventListener("click", toggleLanguage);
 
-    const menuToggle = document.querySelector(".menu-toggle");
+    const menuToggle = document.querySelector(".menu_toggle");
     const navMenu = document.querySelector("nav ul");
     const menuLinks = document.querySelectorAll("nav ul li a");
 
