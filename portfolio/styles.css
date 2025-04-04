@@ -142,7 +142,7 @@ section {
 .home {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 4vw;
+  font-size: 2vw;
 }
 
 .name,
@@ -153,16 +153,22 @@ section {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   margin: 0;
 }
-.description {
+.position {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 5vw;
+  font-size: 3vw;
 }
+
+.description {
+  color: white;
+  font-size: 1vw;
+}
+
 
 .home,
 .name,
 .surname,
-.description {
+.position {
   color: #fffdfd;
 }
 

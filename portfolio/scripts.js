@@ -3,7 +3,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const texts = {
         es: {
             home: "Hola, soy",
-            description: "Desarrollador Full-Stack",
+            position: "Desarrollador Full-Stack.",
+            description: "Siempre buscando nuevas formas de crear experiencias de usuario fluidas y significativas.",
             aboutMeTitle: "Sobre Mí",
             aboutMeText: "Aquí puedes escribir información sobre ti, tu experiencia y habilidades.",
             projectTitle: "Proyectos",
@@ -17,7 +18,8 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         en: {
             home: "Hello, I'm",
-            description: "Full-Stack Developer",
+            position: "Full-Stack Developer.",
+            description: "Always looking for new ways to build smooth and meaningful user experiences.",
             aboutMeTitle: "About Me",
             aboutMeText: "Here you can write information about yourself, your experience, and skills.",
             projectTitle: "Projects",
